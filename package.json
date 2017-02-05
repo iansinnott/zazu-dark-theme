@@ -5,6 +5,7 @@
   "scripts": {
     "preversion": "npm run build",
     "postversion": "git push && git push --tags",
+    "bump": "npm version patch",
     "start": "stylus src/main.styl -o dist -w",
     "build": "stylus src/main.styl -o dist"
   },
