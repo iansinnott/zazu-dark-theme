@@ -1,6 +1,6 @@
 {
   "name": "zazu-dark-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A dark theme for Zazu.",
   "scripts": {
     "postversion": "git push && git push --tags",
