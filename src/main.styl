@@ -1,5 +1,6 @@
 primary = #232323
-textColor = rgba(255, 255, 255, 0.9)
+inputColor = rgba(255, 255, 255, 0.9)
+resultColor = #E6E6E6
 
 html
 body
@@ -23,7 +24,7 @@ section#zazu
     background-color transparent
     -webkit-app-region no-drag
     cursor auto
-    color textColor
+    color inputColor
 
   iframe#preview
     border 0
@@ -57,7 +58,7 @@ section#zazu
         width 100%
 
         .icon
-          color textColor
+          color resultColor
           text-align center
           line-height 30px
           height 30px
@@ -69,7 +70,7 @@ section#zazu
         h2, h3
           margin 0
           padding-left 10px
-          color rgba(255, 255, 255, 0.8)
+          color resultColor
           white-space nowrap
           overflow hidden
           text-overflow ellipsis
@@ -78,7 +79,7 @@ section#zazu
         h2
           font-size 20px
           line-height 25px
-          color rgba(255, 255, 255, 0.7)
+          color darken(resultColor, 8%)
           &:last-child
             font-size 20px
             line-height 45px
@@ -90,6 +91,8 @@ section#zazu
         &.active
           background-color lighten(primary, 8%)
           color white
+          h2, h3
+            color white
         &:hover
           background-color lighten(primary, 8%)
           color white

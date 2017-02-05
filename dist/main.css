@@ -53,7 +53,7 @@ section#zazu div.results ul li {
   width: 100%;
 }
 section#zazu div.results ul li .icon {
-  color: rgba(255,255,255,0.9);
+  color: #e6e6e6;
   text-align: center;
   line-height: 30px;
   height: 30px;
@@ -66,7 +66,7 @@ section#zazu div.results ul li h2,
 section#zazu div.results ul li h3 {
   margin: 0;
   padding-left: 10px;
-  color: rgba(255,255,255,0.8);
+  color: #e6e6e6;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -75,7 +75,7 @@ section#zazu div.results ul li h3 {
 section#zazu div.results ul li h2 {
   font-size: 20px;
   line-height: 25px;
-  color: rgba(255,255,255,0.7);
+  color: #d4d4d4;
 }
 section#zazu div.results ul li h2:last-child {
   font-size: 20px;
@@ -87,6 +87,10 @@ section#zazu div.results ul li h3 {
 }
 section#zazu div.results ul li.active {
   background-color: #353535;
+  color: #fff;
+}
+section#zazu div.results ul li.active h2,
+section#zazu div.results ul li.active h3 {
   color: #fff;
 }
 section#zazu div.results ul li:hover {
