@@ -1,21 +1,11 @@
 primary = #232323
-textColor = rgba(255, 255, 255, 0.7)
+textColor = rgba(255, 255, 255, 0.9)
 
 html
 body
   margin 0
   padding 0
   font-size 20px
-
-body.playbook
-  background-color primary
-
-  #install
-    color textColor
-
-  .github-corner > svg
-    fill textColor
-    color darken(primary, 5%)
 
 section#zazu
   background-color darken(primary, 5%)
@@ -82,8 +72,8 @@ section#zazu
           white-space nowrap
           overflow hidden
           text-overflow ellipsis
-          font-family 'Sans Unicode', 'Lucida Grande', sans-serif
-          font-weight 400
+          font-family 'Sans Unicode', 'Helvetica Neue', 'Lucida Grande', sans-serif
+          font-weight 300
 
         h2
           font-size 20px
@@ -98,5 +88,7 @@ section#zazu
 
         &.active
           background-color lighten(primary, 8%)
+          color white
         &:hover
           background-color lighten(primary, 8%)
+          color white

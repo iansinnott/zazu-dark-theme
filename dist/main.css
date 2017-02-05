@@ -4,16 +4,6 @@ body {
   padding: 0;
   font-size: 20px;
 }
-body.playbook {
-  background-color: #232323;
-}
-body.playbook #install {
-  color: rgba(255,255,255,0.7);
-}
-body.playbook .github-corner > svg {
-  fill: rgba(255,255,255,0.7);
-  color: #212121;
-}
 section#zazu {
   background-color: #212121;
   -webkit-app-region: drag;
@@ -29,7 +19,7 @@ section#zazu input {
   background-color: transparent;
   -webkit-app-region: no-drag;
   cursor: auto;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.9);
 }
 section#zazu iframe#preview {
   border: 0;
@@ -62,7 +52,7 @@ section#zazu div.results ul li {
   width: 100%;
 }
 section#zazu div.results ul li .icon {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.9);
   text-align: center;
   line-height: 30px;
   height: 30px;
@@ -75,12 +65,12 @@ section#zazu div.results ul li h2,
 section#zazu div.results ul li h3 {
   margin: 0;
   padding-left: 10px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.9);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: 'Sans Unicode', 'Lucida Grande', sans-serif;
-  font-weight: 400;
+  font-family: 'Sans Unicode', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-weight: 300;
 }
 section#zazu div.results ul li h2 {
   font-size: 20px;
@@ -96,7 +86,9 @@ section#zazu div.results ul li h3 {
 }
 section#zazu div.results ul li.active {
   background-color: #353535;
+  color: #fff;
 }
 section#zazu div.results ul li:hover {
   background-color: #353535;
+  color: #fff;
 }
