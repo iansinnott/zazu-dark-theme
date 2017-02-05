@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "A dark theme for Zazu.",
   "scripts": {
+    "postversion": "git push && git push --tags",
     "start": "stylus src/main.styl -o dist -w",
     "build": "stylus src/main.styl -o dist"
   },
