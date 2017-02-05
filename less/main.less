@@ -1,0 +1,120 @@
+@primary: #232323;
+@textColor: rgba(255, 255, 255, 0.7);
+@transparency: 90%;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body.playbook {
+  background-color: @primary;
+
+  #install {
+    color: @textColor;
+  }
+
+  .github-corner > svg {
+    fill: @textColor;
+    color: darken(@primary, 5%);
+  }
+}
+
+section#zazu {
+  background-color: fade(darken(@primary, 5%), @transparency);
+  background-image: data-uri('../images/feather.png');
+  background-position: 530px 5px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  -webkit-app-region: drag;
+  cursor: move;
+
+  input {
+    outline: none;
+    font-size: 40px;
+    width: 500px;
+    padding: 10px;
+    border: 0;
+    background-color: transparent;
+    -webkit-app-region: no-drag;
+    cursor: auto;
+    color: @textColor;
+  }
+
+  iframe#preview {
+    border: 0;
+  }
+
+  div.results {
+    display: flex;
+    flex-direction: row;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid fade(darken(@primary, 10%), @transparency);
+      max-height: 333px;
+      overflow: hidden;
+      width: 50%;
+
+      &:last-child {
+        width: 100%;
+      }
+
+      + div {
+        width: 50%;
+      }
+
+      li {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        border-bottom: 1px solid fade(darken(@primary, 10%), @transparency);
+        -webkit-app-region: no-drag;
+        cursor: pointer;
+        width: 100%;
+
+        .icon {
+          color: @textColor;
+          text-align: center;
+          line-height: 30px;
+          height: 30px;
+          width: 30px;
+          margin: 7.5px;
+          float: left;
+          opacity: 0.75;
+        }
+
+        h2, h3 {
+          margin: 0;
+          padding-left: 10px;
+          color: @textColor;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-family: "Sans Unicode", "Lucida Grande", sans-serif;
+          font-weight: 400;
+        }
+
+        h2 {
+          font-size: 20px;
+          line-height: 25px;
+          &:last-child {
+            font-size: 20px;
+            line-height: 45px;
+          }
+        }
+
+        h3 {
+          font-size: 15px;
+          line-height: 15px;
+        }
+
+        &.active, &:hover {
+          background-color: fade(lighten(@primary, 8%), @transparency);
+        }
+      }
+    }
+  }
+}

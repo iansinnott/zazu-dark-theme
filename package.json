@@ -1,0 +1,15 @@
+{
+  "name": "zazu-dark-theme",
+  "version": "1.0.0",
+  "description": "A dark theme for Zazu.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "author": "Blaine Schmeisser",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5"
+  }
+}
