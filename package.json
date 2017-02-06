@@ -9,7 +9,7 @@
     "start": "stylus src/main.styl -o dist -w",
     "build": "stylus src/main.styl -o dist"
   },
-  "author": "Blaine Schmeisser",
+  "author": "Ian Sinnott",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
